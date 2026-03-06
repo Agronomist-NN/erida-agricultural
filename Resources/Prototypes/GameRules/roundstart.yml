@@ -522,6 +522,12 @@
   parent: BaseGameRule
   components:
   - type: BasicStationEventScheduler
+  # Erida start
+    minimumTimeUntilFirstEvent: 300 # 5 min
+    minMaxEventTiming:
+      min: 600 # 10 min
+      max: 900 # 15 mis
+  # Erida end
     scheduledGameRules: !type:NestedSelector
       tableId: BasicGameRulesTable
 
@@ -562,23 +568,25 @@
   components:
   - type: RoundstartStationVariationRule
     rules:
-    - id: BasicPoweredLightVariationPass
-    - id: BasicTrashVariationPass
+    # - id: BasicPoweredLightVariationPass Erida eidt
+    # - id: BasicTrashVariationPass # Erida edit
     - id: SolidWallRustingVariationPass
     - id: ReinforcedWallRustingVariationPass
-    - id: CutWireVariationPass
-    - id: BasicPuddleMessVariationPass
-      prob: 0.99
-      orGroup: puddleMess
-    - id: BloodbathPuddleMessVariationPass
-      prob: 0.01
-      orGroup: puddleMess
+    # Erida start
+    # - id: CutWireVariationPass
+    # - id: BasicPuddleMessVariationPass
+    #   prob: 0.99
+    #   orGroup: puddleMess
+    # - id: BloodbathPuddleMessVariationPass
+    #   prob: 0.01
+    #   orGroup: puddleMess
+    # Erida end
     - id: SmugglerStashVariationPass
       prob: 0.90
     - id: SolarPanelDamageVariationPass
     - id: SolarPanelEmptyVariationPass
     - id: BasicDecalDirtVariationPass
-    - id: BasicDecalGraffitiVariationPass
+    # - id: BasicDecalGraffitiVariationPass
     - id: BasicDecalBurnsVariationPass
       prob: 0.50
       orGroup: monospaceDecals
