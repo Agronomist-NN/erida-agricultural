@@ -38539,7 +38539,7 @@ entities:
       rot: 3.141592653589793 rad
       pos: -26.5,14.5
       parent: 2
-- proto: BaseInteQUplinkRadio
+- proto: BaseUplinkRadio
   entities:
   - uid: 30688
     components:
@@ -175004,13 +175004,6 @@ entities:
     - type: Transform
       pos: 47.5,-15.5
       parent: 2
-- proto: SpawnPointZookeeper
-  entities:
-  - uid: 20864
-    components:
-    - type: Transform
-      pos: -19.5,-3.5
-      parent: 2
 - proto: SpiderWeb
   entities:
   - uid: 29825
@@ -181952,23 +181945,6 @@ entities:
     components:
     - type: Transform
       pos: 16.02112,29.37049
-      parent: 2
-- proto: TowelColorWhite
-  entities:
-  - uid: 30810
-    components:
-    - type: Transform
-      pos: -45.285633,-31.318537
-      parent: 2
-  - uid: 30811
-    components:
-    - type: Transform
-      pos: -45.275215,-31.516453
-      parent: 2
-  - uid: 30813
-    components:
-    - type: Transform
-      pos: -45.681465,-31.433119
       parent: 2
 - proto: ToyAi
   entities:

@@ -6,10 +6,9 @@
   showInVote: false # secret
   description: survival-description
   rules:
-    - MeteorSwarmScheduler
+    #- MeteorSwarmScheduler Erida edit
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -66,10 +65,9 @@
     - BasicStationEventScheduler
     - KesslerSyndromeScheduler
     - MeteorSwarmMildScheduler
-    - MeteorSwarmScheduler
+    #- MeteorSwarmScheduler Erida edit
     - RampingStationEventScheduler
     - SpaceTrafficControlEventScheduler
-    - SpaceTrafficControlFriendlyEventScheduler
     - BasicRoundstartVariation
 
 - type: gamePreset
@@ -78,10 +76,11 @@
   - extended
   - shittersafari
   name: extended-title
-  showInVote: false # Erida
+  showInVote: true
   description: extended-description
   rules:
-  - MeteorSwarmScheduler
+  - BasicStationEventScheduler
+  #- MeteorSwarmScheduler Erida edit
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -91,10 +90,9 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
-  showInVote: false #4boring4vote
+  showInVote: true
   description: greenshift-description
   rules:
-  - SpaceTrafficControlFriendlyEventScheduler
   - BasicRoundstartVariation
 
 - type: gamePreset
@@ -110,7 +108,7 @@
   - DynamicRule
   - DummyNonAntag
   - DynamicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler Erida edit
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -149,7 +147,7 @@
   - Traitor
   - SubGamemodesRuleNoWizard
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler Erida edit
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -178,7 +176,7 @@
   - DummyNonAntagChance
   - SubGamemodesRuleNoWizard
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler Erida edit
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -196,7 +194,7 @@
   - Revolutionary
   - SubGamemodesRuleNoWizard
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler Erida edit
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -212,7 +210,7 @@
   - DummyNonAntagChance
   - SubGamemodesRuleNoWizard #No Dual Wizards at the start, midround is fine
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler Erida edit
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -228,7 +226,7 @@
   - DummyNonAntagChance
   - SubGamemodesRuleNoWizardNoXenoborg # no two motherships
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler Erida edit
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 
@@ -246,7 +244,7 @@
   rules:
   - Zombie
   - BasicStationEventScheduler
-  - MeteorSwarmScheduler
+  #- MeteorSwarmScheduler Erida edit
   - SpaceTrafficControlEventScheduler
   - BasicRoundstartVariation
 

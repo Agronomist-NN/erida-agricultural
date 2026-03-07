@@ -12,8 +12,23 @@
   special:
   - !type:AddComponentSpecial
     components:
-    - type: UniversalLanguageSpeaker
-    
+    - type: LanguageOnSpawn
+      languages:
+      - TauCetiBasic
+      - Shark
+      - Dwarven
+      - Demonic
+      - Dragon
+      - Canilunzt
+      - RootSpeak
+      - Mar
+      - Moffic
+      - SolCommon
+      - Nekomimetic
+      - Spider
+      - Slime
+      - Freespeak
+
 - type: startingGear
   id: LibrarianGear
   equipment:

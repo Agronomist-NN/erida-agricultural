@@ -19,7 +19,7 @@ cargo-console-menu-requests-label = Запросы
 cargo-console-menu-orders-label = Заказы
 cargo-console-menu-order-reason-description = Причина: { $reason }
 cargo-console-menu-populate-categories-all-text = Все
-cargo-console-menu-populate-orders-cargo-order-row-product-name-text = { $productName } (x{ $orderAmount }) от { $orderRequester } со счёта [color={ $accountColor }]{ $account }[/color]
+cargo-console-menu-populate-orders-cargo-order-row-product-name-text = Запросил: {$orderRequester} со счёта [color={$accountColor}]{$account}[/color]
 cargo-console-menu-cargo-order-row-approve-button = Одобрить
 cargo-console-menu-cargo-order-row-cancel-button = Отменить
 cargo-console-menu-tab-title-orders = Заказы
@@ -48,13 +48,7 @@ cargo-console-fund-transfer-user-unknown = Неизвестно
 cargo-console-paper-reason-default = Отсутствует
 cargo-console-paper-approver-default = Самостоятельно
 cargo-console-paper-print-name = Заказ #{ $orderNumber }
-cargo-console-paper-print-text =
-    Заказ #{ $orderNumber }
-    Товар: { $itemName }
-    Кол-во: { $orderQuantity }
-    Запросил: { $requester }
-    Причина: { $reason }
-    Одобрил: { $approver }
+
 # Cargo shuttle console
 cargo-shuttle-console-menu-title = Консоль вызова грузового шаттла
 cargo-shuttle-console-station-unknown = Неизвестно
@@ -83,7 +77,25 @@ cargo-acquisition-slip-body = [head=3]Детали актива[/head]
     { "[bold]Цена за единицу:[/bold" }] ${ $unit }
     { "[bold]Количество:[/bold]" } { $amount }
     { "[bold]Сумма:[/bold]" } ${ $cost }
-    
+
     { "[head=3]Детали покупки[/head]" }
     { "[bold]Заказчик:[/bold]" } { $orderer }
     { "[bold]Причина:[/bold]" } { $reason }
+
+cargo-console-menu-flavor-left = Закажите ещё больше ящиков пиццы, чем обычно!
+cargo-console-menu-flavor-right = v2.1
+cargo-console-menu-order-row-title = {$productName} (x{$orderAmount} за {$orderPrice}$)
+cargo-console-menu-order-row-product-description = Причина: {$orderReason}
+cargo-console-menu-order-row-button-approve = Одобрить
+cargo-console-menu-order-row-button-cancel = Отменить
+cargo-console-menu-order-row-alerts-reason-absent = Причина не указана
+cargo-console-menu-order-row-alerts-requester-unknown = Неизвестно
+
+cargo-console-paper-print-text = [head=2]Заказ #{$orderNumber}[/head]
+    {"[bold]Товар:[/bold]"} {$itemName} (x{$orderQuantity})
+    {"[bold]Запросил:[/bold]"} {$requester}
+
+    {"[head=3]Информация о заказе[/head]"}
+    {"[bold]Плательщик:[/bold]"} {$account} [font="Monospace"]\[{$accountcode}\][/font]
+    {"[bold]Одобрил:[/bold]"} {$approver}
+    {"[bold]Причина:[/bold]"} {$reason}

@@ -17,6 +17,7 @@
   - Dwarf
   - Demon
   - Felinid
+  - Vulpkanin
   components:
     - type: RandomHumanoidAppearance
       randomizeName: false

@@ -1,5 +1,3 @@
-#backmen start
----
 - type: alertLevels
   id: stationAlerts
   defaultLevel: green
@@ -21,14 +19,14 @@
       shuttleTime: 600
     violet:
       announcement: alert-level-violet-announcement
-      sound: /Audio/Backmen/Misc/new-style-alerts/purple_code_new_style.ogg
+      sound: /Audio/_Backmen/Misc/new-style-alerts/purple_code_new_style.ogg
       color: Violet
       emergencyLightColor: Violet
       forceEnableEmergencyLights: true
       shuttleTime: 600
     yellow:
       announcement: alert-level-yellow-announcement
-      sound: /Audio/Backmen/Misc/new-style-alerts/yellow_code_new_style.ogg
+      sound: /Audio/_Backmen/Misc/new-style-alerts/yellow_code_new_style.ogg
       color: Yellow
       emergencyLightColor: Goldenrod
       forceEnableEmergencyLights: true
@@ -36,7 +34,7 @@
     amber:
       announcement: alert-level-amber-announcement
       sound:
-        path: /Audio/Backmen/Misc/new-style-alerts/amber_code_new_style.ogg
+        path: /Audio/_Backmen/Misc/new-style-alerts/amber_code_new_style.ogg
         params:
           volume: -2
       color: Orange
@@ -57,7 +55,7 @@
       announcement: alert-level-gamma-announcement
       selectable: false
       sound:
-        path: /Audio/Corvax/Misc/siren.ogg # Corvax: Return of the old siren sound
+        path: /Audio/_Corvax/Misc/siren.ogg # _Corvax: Return of the old siren sound
         params:
           volume: -4
       disableSelection: true
@@ -88,12 +86,12 @@
       emergencyLightColor: DarkViolet
       forceEnableEmergencyLights: true
       shuttleTime: 1200
-    #backmen end
+    #_backmen end
     #Erida start
     sierra:
       announcement: alert-level-sierra-announcement
       selectable: false
-      sound: /Audio/Backmen/Misc/new-style-alerts/sigma_code_new_style.ogg
+      sound: /Audio/_Backmen/Misc/new-style-alerts/sigma_code_new_style.ogg
       disableSelection: true
       color: LightSeaGreen
       emergencyLightColor: Aqua

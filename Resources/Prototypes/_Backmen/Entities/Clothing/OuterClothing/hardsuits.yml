@@ -5,18 +5,18 @@
   description: A hardsuit designed for Blueshield officers with enhanced protection and night vision.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/OuterClothing/Hardsuits/bluehardsuit.rsi
+    sprite: _Backmen/Clothing/OuterClothing/Hardsuits/bluehardsuit.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/OuterClothing/Hardsuits/bluehardsuit.rsi
+    sprite: _Backmen/Clothing/OuterClothing/Hardsuits/bluehardsuit.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitBlueShield
   - type: Armor
     modifiers:
       coefficients: # Erida
-        Blunt: 0.6
+        Blunt: 0.55
         Heat: 0.6
-        Slash: 0.6
-        Piercing: 0.6
+        Slash: 0.55
+        Piercing: 0.55
         Radiation: 0.4
         Caustic: 0.5
   - type: ClothingSpeedModifier
@@ -32,9 +32,9 @@
   description: A special suit that protects against hazardous, low pressure environments. Has an additional layer of armor. Lightened especially for the pilot.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/OuterClothing/Hardsuits/sec-pilot-hardsuit.rsi
+    sprite: _Backmen/Clothing/OuterClothing/Hardsuits/sec-pilot-hardsuit.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/OuterClothing/Hardsuits/sec-pilot-hardsuit.rsi
+    sprite: _Backmen/Clothing/OuterClothing/Hardsuits/sec-pilot-hardsuit.rsi
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8

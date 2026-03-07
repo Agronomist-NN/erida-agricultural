@@ -24,18 +24,19 @@
   - type: Transform
     anchored: true
   - type: Sprite
-    sprite: Structures/Power/Generation/Singularity/emitter.rsi
+    sprite: _Corvax/Structures/Power/Generation/Singularity/emitter.rsi  # Corvax-Resprite
     layers:
-    - state: emitter
+    - state: emitter # Corvax-Resprite
     - state: beam
       shader: unshaded
       visible: false
       map: ["enum.EmitterVisualLayers.Lights"]
-    - state: locked
+    - state: unlocked # Corvax-Resprite
       shader: unshaded
-      visible: false
+      # visible: false # Corvax-Resprite
       map: ["enum.LockVisualLayers.Lock"]
   - type: Emitter
+    alertRadio: true
   - type: Gun
     showExamineText: false
     fireRate: 10 #just has to be fast enough to keep up with upgrades
@@ -55,6 +56,9 @@
   - type: Damageable
     damageContainer: StructuralInorganic
     damageModifierSet: StructuralMetallicStrong
+  - type: ActiveRadio
+    channels:
+    - Engineering
   - type: Destructible
     thresholds:
       - trigger:

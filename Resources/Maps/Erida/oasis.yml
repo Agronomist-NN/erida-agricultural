@@ -172703,13 +172703,6 @@ entities:
     - type: Transform
       pos: -16.5,7.5
       parent: 2
-- proto: SpawnPointZookeeper
-  entities:
-  - uid: 20402
-    components:
-    - type: Transform
-      pos: -19.5,-3.5
-      parent: 2
 - proto: SprayBottleSpaceCleaner
   entities:
   - uid: 20403

@@ -1,7 +1,6 @@
 - type: marking
   id: TaurCanine
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -12,7 +11,6 @@
 - type: marking
   id: TaurCow
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -21,7 +19,6 @@
 - type: marking
   id: TaurDeer
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -32,7 +29,6 @@
 - type: marking
   id: TaurDrake
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph, Reptilian]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -43,7 +39,6 @@
 - type: marking
   id: TaurSpider
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph, Arachnid]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -52,7 +47,6 @@
 - type: marking
   id: TaurEevee
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -63,7 +57,6 @@
 - type: marking
   id: TaurFeline
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -74,7 +67,6 @@
 - type: marking
   id: TaurHorse
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -89,7 +81,6 @@
 - type: marking
   id: TaurSynthLizard
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph, Reptilian]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -102,7 +93,6 @@
 - type: marking
   id: TaurNaga
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph, Reptilian]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -115,7 +105,6 @@
 - type: marking
   id: TaurOtie
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -130,7 +119,6 @@
 - type: marking
   id: TaurPede
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -143,7 +131,6 @@
 - type: marking
   id: TaurTentacle
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi
@@ -152,7 +139,6 @@
 - type: marking
   id: TaurSynthWolf
   bodyPart: Tail
-  markingCategory: Tail
 #  speciesRestriction: [Anthropomorph]
   sprites:
     - sprite: _Orion/Mobs/Customization/taur.rsi

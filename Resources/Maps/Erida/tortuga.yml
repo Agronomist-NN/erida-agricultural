@@ -127612,7 +127612,7 @@ entities:
     - type: Transform
       pos: -67.5,35.5
       parent: 2
-- proto: GlowstickBase
+- proto: GlowstickGreen
   entities:
   - uid: 18208
     components:
@@ -170570,18 +170570,6 @@ entities:
     components:
     - type: Transform
       pos: -13.5,46.5
-      parent: 2
-- proto: SpawnPointBoxer
-  entities:
-  - uid: 25318
-    components:
-    - type: Transform
-      pos: 29.5,40.5
-      parent: 2
-  - uid: 25319
-    components:
-    - type: Transform
-      pos: 29.5,39.5
       parent: 2
 - proto: SpawnPointBrigmedic
   entities:

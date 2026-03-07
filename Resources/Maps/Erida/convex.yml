@@ -178405,7 +178405,7 @@ entities:
     - type: Transform
       pos: 36.5,70.5
       parent: 2
-- proto: GlowstickBase
+- proto: GlowstickGreen
   entities:
   - uid: 26092
     components:
@@ -208253,18 +208253,6 @@ entities:
     - type: Transform
       pos: 98.5,91.5
       parent: 2
-- proto: SpawnPointBoxer
-  entities:
-  - uid: 31227
-    components:
-    - type: Transform
-      pos: 101.5,82.5
-      parent: 2
-  - uid: 31228
-    components:
-    - type: Transform
-      pos: 111.5,83.5
-      parent: 2
 - proto: SpawnPointBrigmedic
   entities:
   - uid: 31229
@@ -216615,52 +216603,6 @@ entities:
     components:
     - type: Transform
       pos: 89.5,146.5
-      parent: 2
-- proto: TowelColorMime
-  entities:
-  - uid: 32528
-    components:
-    - type: Transform
-      pos: 98.515274,58.649986
-      parent: 2
-- proto: TowelColorNT
-  entities:
-  - uid: 32529
-    components:
-    - type: Transform
-      pos: 35.582672,66.389
-      parent: 2
-- proto: TowelColorPurple
-  entities:
-  - uid: 32530
-    components:
-    - type: Transform
-      rot: -75.39822368615505 rad
-      pos: 56.731422,134.04846
-      parent: 2
-- proto: TowelColorWhite
-  entities:
-  - uid: 32531
-    components:
-    - type: Transform
-      rot: -12.566370614359172 rad
-      pos: 61.55819,50.572445
-      parent: 2
-  - uid: 32532
-    components:
-    - type: Transform
-      pos: 124.378716,86.41438
-      parent: 2
-  - uid: 32533
-    components:
-    - type: Transform
-      pos: 124.73205,86.430695
-      parent: 2
-  - uid: 32534
-    components:
-    - type: Transform
-      rot: -75.39822368615505 rad
-      pos: 55.525246,116.449936
       parent: 2
 - proto: ToyFigurineCaptain
   entities:

@@ -5,16 +5,16 @@
   description: Redesigned security vest with increased protection.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/OuterClothing/Armor/armor_blueshield.rsi
+    sprite: _Backmen/Clothing/OuterClothing/Armor/armor_blueshield.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/OuterClothing/Armor/armor_blueshield.rsi
+    sprite: _Backmen/Clothing/OuterClothing/Armor/armor_blueshield.rsi
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
-        Heat: 0.7
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.6
   - type: StaminaResistance
     damageCoefficient: 0.8
   - type: ExplosionResistance
@@ -30,9 +30,9 @@
   description: A set of armor used in Kendo. It covers the waist, torso, and hands.
   components:
   - type: Sprite
-    sprite: Backmen/Clothing/OuterClothing/Armor/bogu.rsi
+    sprite: _Backmen/Clothing/OuterClothing/Armor/bogu.rsi
   - type: Clothing
-    sprite: Backmen/Clothing/OuterClothing/Armor/bogu.rsi
+    sprite: _Backmen/Clothing/OuterClothing/Armor/bogu.rsi
   - type: Armor
     modifiers:
       coefficients:
