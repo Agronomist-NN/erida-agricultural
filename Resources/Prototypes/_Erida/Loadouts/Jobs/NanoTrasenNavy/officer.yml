@@ -1,0 +1,38 @@
+# # Jumpsuit
+# - type: loadout
+  # id: NanoTrasenNavyOfficerJumpsuit
+  # equipment:
+    # jumpsuit: ClothingUniformJumpsuitNTNavyOfficer
+
+# - type: loadout
+  # id: NanoTrasenNavyOfficerJumpskirt
+  # equipment:
+    # jumpsuit: ClothingUniformJumpskirtNTNavyOfficer
+
+# # Head
+# - type: loadout
+  # id: NanoTrasenNavyOfficerHead
+  # equipment:
+    # head: ClothingHeadHatNTNavyOfficerCap
+
+# # Neck
+# - type: loadout
+  # id: NanoTrasenNavyOfficerCloak
+  # equipment:
+    # neck: ClothingNeckCloakNTNavyOfficer
+
+# # Outer clothing
+# - type: loadout
+  # id: NanoTrasenNavyOfficerArmor
+  # equipment:
+    # outerClothing: ClothingOuterArmorBasic
+
+# - type: loadout
+  # id: NanoTrasenNavyOfficerJacket
+  # equipment:
+    # outerClothing: ClothingOuterCoatNTNavyOfficer
+
+# - type: loadout
+  # id: NanoTrasenNavyOfficerHardsuit
+  # equipment:
+    # outerClothing: ClothingOuterHardsuitNTNavy

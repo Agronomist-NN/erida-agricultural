@@ -1,0 +1,48 @@
+# NT Navy captain
+# - type: roleLoadout
+  # id: JobNTNavyCaptain
+  # groups:
+  # - Werx #erida
+  # - Niz #erida
+  # - Socks
+  # - NanoTrasenNavyCaptainHead
+  # - NanoTrasenNavyCaptainNeck
+  # - NanoTrasenNavyCaptainJumpsuit
+  # - NanoTrasenNavyCaptainBackpack
+  # - NanoTrasenNavyCaptainOuterClothing
+  # - NanoTrasenNavyShoes
+  # - NanoTrasenNavyBelt
+  # - Survival
+  # - GroupSpeciesBreathTool
+
+# # NT Navy officer
+# - type: roleLoadout
+  # id: JobNTNavyOfficer
+  # groups:
+  # - Werx #erida
+  # - Niz #erida
+  # - Socks
+  # - NanoTrasenNavyOfficerHead
+  # - NanoTrasenNavyOfficerNeck
+  # - NanoTrasenNavyOfficerJumpsuit
+  # - NanoTrasenNavyBackpack
+  # - NanoTrasenNavyOfficerOuterClothing
+  # - NanoTrasenNavyShoes
+  # - NanoTrasenNavyBelt
+  # - Survival
+  # - GroupSpeciesBreathTool
+
+# # NT Navy officer
+# - type: roleLoadout
+  # id: JobNTNavySailor
+  # groups:
+  # - Werx #erida
+  # - Niz #erida
+  # - Socks
+  # - NanoTrasenNavyHead
+  # - NanoTrasenNavyBackpack
+  # - NanoTrasenNavyOuterClothing
+  # - NanoTrasenNavyShoes
+  # - NanoTrasenNavyBelt
+  # - Survival
+  # - GroupSpeciesBreathTool

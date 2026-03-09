@@ -20,7 +20,7 @@
             "name": "NavyMedical"
         },
         {
-            "name": "NavyEngineer"
+            "name": "NavyOfficer"
         },
         {
             "name": "WarrantOfficer"
@@ -33,15 +33,6 @@
         },
         {
             "name": "NavyCaptain"
-      "delays": [
-        [
-          0.1,
-          0.1,
-          0.1,
-          0.1,
-          0.1
-        ]
-      ]
-    }
-  ]
+        }
+    ]
 }
