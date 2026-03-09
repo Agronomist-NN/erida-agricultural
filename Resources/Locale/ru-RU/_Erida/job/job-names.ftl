@@ -17,3 +17,4 @@ job-name-nanotrasen-navy-warrant-officer-medical = УО врач ВКФ NT
 job-name-nanotrasen-navy-engineer = инженер ВКФ NT
 job-name-nanotrasen-navy-medical = врач ВКФ NT
 job-name-nanotrasen-navy-sailor = матрос ВКФ NT
+job-name-centcommoff = Официальный представитель Центком
