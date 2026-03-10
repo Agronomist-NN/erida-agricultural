@@ -7,7 +7,7 @@
   components:
   - type: Appearance
   - type: Sprite
-    sprite: _Erida/Objects/Weapons/Guns/Battery/nanotrasen_navy_rifle.rsi/big.rsi
+    sprite: _Erida/Objects/Weapons/Guns/Battery/nanotrasen_navy_rifle/big.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -15,9 +15,9 @@
       map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: Clothing
-    sprite: _Erida/Objects/Weapons/Guns/Battery/nanotrasen_navy_rifle.rsi/tiny.rsi
+    sprite: _Erida/Objects/Weapons/Guns/Battery/nanotrasen_navy_rifle/tiny.rsi
   - type: Item
-    sprite: _Erida/Objects/Weapons/Guns/Battery/nanotrasen_navy_rifle.rsi/tiny.rsi
+    sprite: _Erida/Objects/Weapons/Guns/Battery/nanotrasen_navy_rifle/tiny.rsi
   - type: GunWieldBonus
     minAngle: -23
     maxAngle: -44
