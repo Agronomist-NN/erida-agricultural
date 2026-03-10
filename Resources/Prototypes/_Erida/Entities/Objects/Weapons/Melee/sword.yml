@@ -39,7 +39,7 @@
   - type: StealTarget
     stealGroup: CaptainSword
     
-    - type: entity
+- type: entity
   name: syndicate rapier
   parent: [ BaseSword, BaseSyndicateContraband ]
   id: SyndicateRapier
