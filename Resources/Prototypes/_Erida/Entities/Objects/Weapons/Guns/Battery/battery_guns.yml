@@ -47,8 +47,6 @@
   - type: UseDelay
     delay: 0.6
   - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargePause: true
     autoRechargePauseTime: 1
     autoRechargeRate: 525
 
@@ -96,8 +94,6 @@
   - type: StaticPrice
     price: 5750
   - type: BatterySelfRecharger
-    autoRecharge: true
-    autoRechargePause: true
     autoRechargePauseTime: 1
     autoRechargeRate: 525
 
