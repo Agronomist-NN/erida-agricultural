@@ -76,7 +76,7 @@
           - CaptainNTNavySabre
   - type: Appearance
   
-  - type: entity
+- type: entity
   parent: [ClothingBeltBase, ClothingSlotBase, BaseSyndicateContraband]
   id: ClothingBeltSheathSyndicate
   name: rapier sheath
