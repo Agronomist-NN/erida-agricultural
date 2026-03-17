@@ -3,6 +3,7 @@
   name: job-name-nanotrasen-navy-officer
   description: job-description-nanotrasen-navy-officer
   playTimeTracker: JobNTNavyOfficer
+  setPreference: false
   requirements:
     - !type:DepartmentTimeRequirement
       department: Engineering

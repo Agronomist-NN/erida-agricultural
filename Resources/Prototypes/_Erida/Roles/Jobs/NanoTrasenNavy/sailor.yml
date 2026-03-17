@@ -3,6 +3,7 @@
   name: job-name-nanotrasen-navy-sailor
   description: job-description-nanotrasen-navy-sailor
   playTimeTracker: JobNTNavySailor
+  setPreference: false
   requirements:
     - !type:DepartmentTimeRequirement
       department: Security

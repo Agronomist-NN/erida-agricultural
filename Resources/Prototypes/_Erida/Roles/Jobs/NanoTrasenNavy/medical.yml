@@ -3,6 +3,7 @@
   name: job-name-nanotrasen-navy-medical
   description: job-description-nanotrasen-navy-medical
   playTimeTracker: JobNTNavyMedical
+  setPreference: false
   requirements:
     - !type:DepartmentTimeRequirement
       department: Medical
