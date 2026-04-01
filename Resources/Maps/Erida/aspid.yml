@@ -19181,7 +19181,7 @@ entities:
     - type: Transform
       pos: 27.495394,40.613876
       parent: 2
-- proto: BaseChemistryEmptyVial
+- proto: ChemistryEmptyVial
   entities:
   - uid: 702
     components:
@@ -104687,7 +104687,6 @@ entities:
       parent: 2
     - type: ApcPowerReceiver
       powerLoad: 0
-    - type: Timer
   - uid: 14822
     components:
     - type: Transform

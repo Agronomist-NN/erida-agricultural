@@ -23,7 +23,7 @@ GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com")
 DISCORD_SPLIT_LIMIT = 2000
 DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
-CHANGELOG_FILE = "Resources/Changelog/Changelog.yml"
+CHANGELOG_FILE = "Resources/Changelog/Erida.yml" # Erida edit
 
 TYPES_TO_EMOJI = {"Fix": "🐛", "Add": "🆕", "Remove": "❌", "Tweak": "⚒️"}
 
@@ -31,7 +31,9 @@ ChangelogEntry = dict[str, Any]
 
 
 def main():
-    if not DISCORD_WEBHOOK_URL:
+    webhook_erida = os.environ.get("DISCORD_WEBHOOK_URL_ERIDA")
+
+    if not webhook_erida:
         print("No discord webhook URL found, skipping discord send")
         return
 
@@ -49,8 +51,10 @@ def main():
         cur_changelog = yaml.safe_load(f)
 
     diff = diff_changelog(last_changelog, cur_changelog)
-    message_lines = changelog_entries_to_message_lines(diff)
-    send_message_lines(message_lines)
+
+    for entry in diff:
+        embed = entry_to_embed(entry)
+        send_embed(embed)
 
 
 def get_most_recent_workflow(
@@ -140,32 +144,46 @@ def get_discord_body(content: str):
     return {
         "content": content,
         # Do not allow any mentions.
-        "allowed_mentions": {"parse": []},
+        # "allowed_mentions": {"parse": []},
         # SUPPRESS_EMBEDS
-        "flags": 1 << 2,
+        "flags": 0,
     }
 
+def send_with_retry(webhook_url: str, body: dict, name: str):
+    retry_attempt = 0
+    MAX_RETRIES = 20
+
+    while True:
+        try:
+            response = requests.post(webhook_url, json=body, timeout=10)
+            if response.status_code == 429:
+                retry_attempt += 1
+                if retry_attempt > MAX_RETRIES:
+                    print(f"[{name}] Too many retries, giving up")
+                    return
+                retry_after = response.json().get("retry_after", 5)
+                print(f"[{name}] Rate limited, retrying after {retry_after} seconds")
+                time.sleep(retry_after)
+                continue
+
+            response.raise_for_status()
+            print(f"Sent to {name} webhook")
+            break
+        except requests.exceptions.RequestException as e:
+            print(f"[{name}] Failed to send message: {e}")
+            break
 
 def send_discord_webhook(lines: list[str]):
     content = "".join(lines)
     body = get_discord_body(content)
-    retry_attempt = 0
 
-    try:
-        response = requests.post(DISCORD_WEBHOOK_URL, json=body, timeout=10)
-        while response.status_code == 429:
-            retry_attempt += 1
-            if retry_attempt > 20:
-                print("Too many retries on a single request despite following retry_after header... giving up")
-                exit(1)
-            retry_after = response.json().get("retry_after", 5)
-            print(f"Rate limited, retrying after {retry_after} seconds")
-            time.sleep(retry_after)
-            response = requests.post(DISCORD_WEBHOOK_URL, json=body, timeout=10)
-        response.raise_for_status()
-    except requests.exceptions.RequestException as e:
-        print(f"Failed to send message: {e}")
-        exit(1)
+    webhook_url_erida = os.environ.get("DISCORD_WEBHOOK_URL_ERIDA")
+
+    if webhook_url_erida:
+        send_with_retry(webhook_url_erida, body, "Erida")
+
+    if not webhook_url_erida:
+        print("No Discord webhooks configured!")
 
 
 def changelog_entries_to_message_lines(entries: Iterable[ChangelogEntry]) -> list[str]:
@@ -199,6 +217,50 @@ def changelog_entries_to_message_lines(entries: Iterable[ChangelogEntry]) -> lis
 
     return message_lines
 
+def entry_to_embed(entry: ChangelogEntry) -> dict:
+    lines = []
+
+    for change in entry["changes"]:
+        emoji = TYPES_TO_EMOJI.get(change["type"], "❓")
+        message = change["message"]
+
+        if len(message) > 4000:
+            message = message[:3900].rstrip() + "..."
+
+        lines.append(f"{emoji} - {message}")
+
+    description = "\n".join(lines)
+
+    embed = {
+        "title": entry["title"],
+        "description": description,
+        "color": 0xa06da8,
+        "fields": [],
+        "footer": {
+            "text": entry.get("author"),
+            "icon_url": entry.get("avatar_url"),
+        },
+        "url": entry.get("url"),
+        "timestamp": entry["time"],
+    }
+
+    return embed
+
+def send_embed(embed: dict):
+    webhook_url = os.environ.get("DISCORD_WEBHOOK_URL_ERIDA")
+
+    if not webhook_url:
+        print("No Discord webhook configured!")
+        return
+
+    body = {
+        "content": "",
+        "embeds": [embed],
+        # "allowed_mentions": {"parse": []},
+        # "flags": 1 << 2,
+    }
+
+    send_with_retry(webhook_url, body, "Erida")
 
 def send_message_lines(message_lines: list[str]):
     """Join a list of message lines into chunks that are each below Discord's message length limit, and send them."""

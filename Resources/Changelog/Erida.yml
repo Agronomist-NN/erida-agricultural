@@ -1,0 +1,165 @@
+Entries:
+- author: Sidzaru
+  changes:
+    - message: Circuit tiles and faux tiles have been moved to the cutter machine.
+      type: Tweak
+  id: 1
+  time: '2025-09-24T00:12:45.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/292
+  avatar_url: https://avatars.githubusercontent.com/u/110207359?v=4
+  title: Test
+- author: YourName
+  changes:
+    - type: Add
+      message: Добавлено веселье!
+    - type: Remove
+      message: Удалено веселье!
+    - type: Tweak
+      message: Изменено веселье!
+    - type: Fix
+      message: Исправлено веселье!
+  id: 2
+  time: '2026-03-24T17:08:06.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/292
+  avatar_url: https://avatars.githubusercontent.com/u/110207359?v=4
+  title: Test7
+- author: YourName
+  changes:
+    - type: Add
+      message: Добавлено веселье!
+    - type: Remove
+      message: Удалено веселье!
+    - type: Tweak
+      message: Изменено веселье!
+    - type: Fix
+      message: Исправлено веселье!
+  id: 3
+  time: '2026-03-24T18:59:17.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/293
+  avatar_url: https://avatars.githubusercontent.com/u/110207359?v=4
+  title: Test 8
+- author: vanomorodellefake
+  changes:
+    - type: Add
+      message: >-
+        ПНВ и термалы в аплинк, а также исследования НИО. Доступны для
+        производства на протолате и техфабе СБ после исследования
+    - type: Add
+      message: у осща в очках и визорах есть ПНВ
+  id: 4
+  time: '2026-03-24T21:42:48.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/294
+  avatar_url: https://avatars.githubusercontent.com/u/53963119?v=4
+  title: night and thermal vision goggles in uplink and research
+- author: Sidzaru
+  changes:
+    - type: Add
+      message: Правила сервера перенесены в игру.
+    - type: Remove
+      message: Обломки больше не спавнят труп ЦК.
+    - type: Fix
+      message: Позитронный мозг и нимфы дионы вновь понимают Тау Сети.
+    - type: Fix
+      message: Исправлено отображение ступней под носками.
+    - type: Fix
+      message: Исправлен баг с игральными картами.
+    - type: Tweak
+      message: Бюрократическая ошибка больше не может удалить ВСЕ роли на станции.
+  id: 5
+  time: '2026-03-25T01:24:17.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/295
+  avatar_url: https://avatars.githubusercontent.com/u/110207359?v=4
+  title: '[Tweak] Minor changes'
+- author: xkttty
+  changes:
+    - type: Fix
+      message: Исправлены недоработки лампы джина.
+  id: 6
+  time: '2026-03-25T15:12:35.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/296
+  avatar_url: https://avatars.githubusercontent.com/u/230472830?v=4
+  title: '[Fix] Баг с стрельбой из лампы джина.'
+- author: Агент плесень хайпует
+  changes:
+    - type: Add
+      message: Добавлены урчания и WEH для унатхов! VIVA LA UNATI!
+  id: 10
+  time: '2026-03-26T19:11:21.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/301
+  avatar_url: https://avatars.githubusercontent.com/u/145777900?v=4
+  title: Добавление урчания и веха для унатхов
+- author: Sidzaru
+  changes:
+    - type: Add
+      message: Портирована система эхо.
+  id: 11
+  time: '2026-03-25T17:04:34.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/297
+  avatar_url: https://avatars.githubusercontent.com/u/110207359?v=4
+  title: '[Port] Echo system from monolith'
+- author: Anilori
+  changes:
+    - type: Fix
+      message: Спрайты наложения реагента на копья теперь более коректные.
+  id: 12
+  time: '2026-03-25T17:41:47.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/298
+  avatar_url: https://avatars.githubusercontent.com/u/183598448?v=4
+  title: '[fix] наложение реагентов на копья'
+- author: Anilori
+  changes:
+    - type: Tweak
+      message: Эффект скорости от нитриума был увеличен с 1.15 до 1.2
+    - type: Tweak
+      message: Нитриум дает эффект `PainNumbness`.
+    - type: Tweak
+      message: Хилиум теперь уменьшает кровотечение.
+    - type: Fix
+      message: Эффект дополнительной стамины от нитриума теперь работает.
+  id: 13
+  time: '2026-03-25T19:11:21.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/299
+  avatar_url: https://avatars.githubusercontent.com/u/183598448?v=4
+  title: '[Tweaks/Fix] Атмос'
+- author: Anilori
+  changes:
+    - type: Add
+      message: Новый GPS
+    - type: Add
+      message: Варп-Кубы, что можно получить из сундука некрополиса
+    - type: Tweak
+      message: GPS были удалены из шкафов утилизаторов
+    - type: Tweak
+      message: в каталог шахтерМага были добавлены GPS и шахтерский выбор оружия.
+    - type: Tweak
+      message: >-
+        теперь при выпадении брони аколита из сундука некрополиса так же падают
+        ботинки и шлем культа.
+    - type: Tweak
+      message: >-
+        Теперь explorer Suit замедляет взависимости от тира улучшения его
+        пластинами голиафа: 10% 20% 30% 35% 
+  id: 14
+  time: '2026-03-30T16:12:30.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/302
+  avatar_url: https://avatars.githubusercontent.com/u/183598448?v=4
+  title: Lavaland tweaks
+- author: Lytheriia
+  changes:
+    - type: Add
+      message: Еда и жидкости в мензурках изменяют свой цвет относительно своей теплоты
+    - type: Add
+      message: >-
+        ИИ получил возможность уйти в криосон через взаимодействие со своим
+        ядром
+    - type: Tweak
+      message: ИИ теперь может читать документы
+    - type: Fix
+      message: Иерофант прекращает бой при смерти напавшего
+    - type: Fix
+      message: Термальные очки больше не влияют на UI мониторинга камер
+  id: 15
+  time: '2026-04-01T10:22:41.0000000+00:00'
+  url: https://github.com/dead-space-server/space-erida-14/pull/303
+  avatar_url: https://avatars.githubusercontent.com/u/271650867?v=4
+  title: Minor updates from goobstation
